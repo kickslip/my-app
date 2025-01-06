@@ -1,31 +1,30 @@
-
 // components/Hero.tsx
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Hero() {
   return (
-    <div className="relative h-[600px] w-full">
-      <div className="grid grid-cols-2 h-full">
-        {/* Left side with image */}
-        <div className="relative h-full">
-          <Image
-            src="/api/placeholder/800/600"
-            alt="Hero fashion"
-            fill
-            className="object-cover"
-          />
-        </div>
-        {/* Right side with content */}
-        <div className="flex items-center justify-center bg-slate-50 p-12">
-          <div className="max-w-md">
-            <h1 className="text-4xl font-bold mb-4">New Collection</h1>
-            <p className="mb-8">Discover our latest sustainable styles</p>
-            <button className="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700">
-              Shop Now
-            </button>
-          </div>
+    <section className="relative w-full h-[80vh] overflow-hidden">
+      <div className="relative h-full w-full">
+        <Image
+          src="/im0.jpg"
+          alt="New Year New Mules Collection"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+          <h1 className="text-6xl font-light mb-8 leading-tight text-gray-800">
+            New Year.<br />New Mules.
+          </h1>
+          <Link
+            href="/collections/new-loafers"
+            className="bg-white text-black px-8 py-3 text-sm tracking-wider hover:bg-gray-100 transition-colors"
+          >
+            SHOP NEW LOAFER MULES
+          </Link>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
