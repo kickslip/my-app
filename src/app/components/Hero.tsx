@@ -14,7 +14,7 @@ export default function Hero() {
           priority
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-          <h1 className="text-6xl font-light mb-8 leading-tight text-gray-800">
+          <h1 className="text-6xl font-light mb-8 leading-tight text-white">
             New Year.<br />New Mules.
           </h1>
           <Link

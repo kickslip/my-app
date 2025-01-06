@@ -18,7 +18,7 @@ export default function Navbar() {
       <div className="border-b px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold">STORE</Link>
+          <Link href="/" className="text-2xl font-bold">Shopfarm</Link>
           
           {/* Main Menu */}
           <div className="hidden md:flex space-x-8">
